@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic-Tac-Toe Game</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    
 
     <div class="wrapper">
 
-        <p class="game-info">Current Player - <span class="player">X</span></p>
+        <div class="container">
+            <p class="game-info">Current Player - <span class="player">X</span></p>
 
-        <div class="tic-tac-toe">
-            <div class="box top left box1"></div>
-            <div class="box top mid box2"></div>
-            <div class="box top right box3"></div>
-            <div class="box mid left box4"></div>
-            <div class="box mid mid box5"></div>
-            <div class="box mid right box6"></div>
-            <div class="box bottom left box7"></div>
-            <div class="box bottom mid box8"></div>
-            <div class="box bottom right box9"></div>
+            <div class="tic-tac-toe">
+                <div class="box top left box1"></div>
+                <div class="box top mid box2"></div>
+                <div class="box top right box3"></div>
+                <div class="box mid left box4"></div>
+                <div class="box mid mid box5"></div>
+                <div class="box mid right box6"></div>
+                <div class="box bottom left box7"></div>
+                <div class="box bottom mid box8"></div>
+                <div class="box bottom right box9"></div>
+            </div>
+
+            <button class="btn" onclick="resetfn()">New Game</button>
         </div>
 
-        <button class="btn" onclick="resetfn()">New Game</button>
-
+        <div class="result">
+            <div class="result-header">
+                <span class="close-btn" onclick="closeResult()">×</span>
+            </div>
+            <h1 class="result-text"></h1>
+            <button class="btn" onclick="resetfn()">Play Again</button>
+        </div>
     </div>
+
     <script src="index.js"></script>
 
 </body>
+
 </html>
